@@ -628,7 +628,7 @@ public class InfinityProject extends JPanel implements ActionListener {
             companiesInPortfolio[i] = portfolios.get(currIndex).getTickers()[i] + " | " + portfolios.get(currIndex).getNames()[i] + " | " + portfolios.get(currIndex).getSectors()[i] + " | $" + portfolios.get(currIndex).getCostBasis()[i] + " | $" + portfolios.get(currIndex).getCurrentPrices()[i] + " | " + Math.round(portfolios.get(currIndex).getPercentChanges()[i]*10000.0)/100.0 + "%";
         }
         JLabel performance = new JLabel("Performance To Date: " + Math.round(portfolios.get(currIndex).getPortfolioReturn()*10000.0)/100.0 + "%", SwingConstants.CENTER);
-        performance.setFont(new Font("Arial", Font.BOLD, 20));
+        performance.setFont(new Font("Arial", Font.BOLD, 16));
         performance.setPreferredSize(new Dimension(280, 233));
         performance.setBorder(BorderFactory.createEtchedBorder());
         JList compList = new JList(companiesInPortfolio);
